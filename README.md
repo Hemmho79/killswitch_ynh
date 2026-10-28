@@ -4,7 +4,7 @@ It shall NOT be edited by hand.
 -->
 
 <h1>
-  <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/killswitch.png" width="32px" alt="Logo of Ki-llSwitch">
+  <img src="doc/logo.png" width="32px" alt="Logo of Ki-llSwitch">
   Ki-llSwitch, packaged for YunoHost
 </h1>
 
