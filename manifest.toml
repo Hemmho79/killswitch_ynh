@@ -1,0 +1,63 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/main/schemas/manifest.v2.schema.json
+
+packaging_format = 2
+
+id = "killswitch"
+name = "Ki-llSwitch"
+description.en = "Browser strategy game: an AI tries to take over the world, humanity tries to stop it. Play online."
+description.de = "Strategiespiel im Browser: Eine KI will die Welt übernehmen, die Menschheit will sie aufhalten. Online spielbar."
+
+version = "0.1~ynh1"
+
+maintainers = ["Hemmho79"]
+
+[upstream]
+# FIXME: Lizenz des Spiels klären (Spiel basiert auf Endgame: Singularity). "free" ist nur ein Platzhalter.
+license = "free"
+code = "https://github.com/Hemmho79/KI-llswitch"
+
+[integration]
+yunohost = ">= 12.1.17"
+helpers_version = "2.1"
+architectures = "all"
+multi_instance = true
+ldap = "not_relevant"
+sso = "not_relevant"
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "150M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.path]
+    type = "path"
+    default = "/killswitch"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+[resources]
+
+    [resources.sources]
+
+    [resources.sources.main]
+    url = "https://github.com/Hemmho79/KI-llswitch/archive/4438420256bf6c8bc66bb499a6c72ed1e8c4add6.tar.gz"
+    sha256 = "30e02b01f8fbbfa3b423f59d1e86958f22004b5caf026c2d9236dc0d562fe36e"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.data_dir]
+
+    [resources.permissions]
+    main.url = "/"
+    main.auth_header = false
+
+    [resources.ports]
+
+    [resources.nodejs]
+    version = "22"
