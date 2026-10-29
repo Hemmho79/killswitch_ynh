@@ -7,7 +7,7 @@ name = "Ki-llSwitch"
 description.en = "Browser strategy game: an AI tries to take over the world, humanity tries to stop it. Play online."
 description.de = "Strategiespiel im Browser: Eine KI will die Welt übernehmen, die Menschheit will sie aufhalten. Online spielbar."
 
-version = "0.1~ynh1"
+version = "0.1~ynh2"
 
 maintainers = ["Hemmho79"]
 
@@ -44,8 +44,8 @@ ram.runtime = "150M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/Hemmho79/KI-llswitch/archive/4438420256bf6c8bc66bb499a6c72ed1e8c4add6.tar.gz"
-    sha256 = "30e02b01f8fbbfa3b423f59d1e86958f22004b5caf026c2d9236dc0d562fe36e"
+    url = "https://github.com/Hemmho79/KI-llswitch/archive/0c3549c840279c0c7198a63b585b8cb116242ab2.tar.gz"
+    sha256 = "7f2dcd0a98defc3dc284a28406a545dbd6a598c67e5a4fad7560e5e0e648ab58"
 
     [resources.system_user]
 
